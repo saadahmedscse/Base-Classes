@@ -1,4 +1,4 @@
-package com.saadahmedsoft.base.utils
+package com.saadahmedsoft.base.arch
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
