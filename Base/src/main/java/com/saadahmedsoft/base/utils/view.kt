@@ -15,10 +15,10 @@ infix fun View.onLongPressed(onPress: (View) -> Boolean){
     setOnLongClickListener {onPress(it)}
 }
 
-fun View.getColor(@ColorRes resId: Int) = ContextCompat.getColor(context, resId)
-fun Context.getColor(@ColorRes resId: Int) = ContextCompat.getColor(this, resId)
-fun Activity.getColor(@ColorRes resId: Int) = ContextCompat.getColor(this, resId)
-fun Fragment.getColor(@ColorRes resId: Int) = ContextCompat.getColor(context!!, resId)
+fun View.findColor(@ColorRes resId: Int) = ContextCompat.getColor(context, resId)
+fun Context.findColor(@ColorRes resId: Int) = ContextCompat.getColor(this, resId)
+fun Activity.findColor(@ColorRes resId: Int) = ContextCompat.getColor(this, resId)
+fun Fragment.findColor(@ColorRes resId: Int) = ContextCompat.getColor(context!!, resId)
 
 fun View.visible() {
     visibility = View.VISIBLE
